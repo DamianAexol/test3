@@ -1,6 +1,6 @@
 type Query{
 	health: String
-	stealth: Boolean
+	stealth: String
 }
 schema{
 	query: Query
