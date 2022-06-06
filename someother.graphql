@@ -1,6 +1,6 @@
 mutation {
   submitFeedback(submitFeedback: {
-    name:"damian", email:"qwe@qwe.pl", message:"some message"
+    name:"janusz", email:"janusz@qwe.pl", message:"some message janusza"
   }
   ), {
     message
