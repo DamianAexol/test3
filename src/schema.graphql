@@ -1,8 +1,49 @@
 type Query{
-	healthTest123: String
-	superLatestTest: Boolean
-	TestZPr: String
+	health: String
+	brelf: String
+}
+
+type Mutation{
+	submitForm(
+		submitForm: submitForm
+	): Response
+	submitFeedback(
+		submitFeedback: submitFeedback
+	): Response
+}
+
+type Response{
+	message: String!
+}
+
+input submitForm{
+	name: String!
+	email: String!
+	isFemale: Boolean
+	favouriteColors: [colors!] = []
+	leastLikedColor: colors!
+	message: String
+}
+
+enum colors{
+	white
+	black
+	red
+	blue
+	green
+}
+
+enum animals{
+	turtle
+	cat
+}
+
+input submitFeedback{
+	name: String
+	email: String
+	message: String
 }
 schema{
-	query: Query
+	query: Query,
+	mutation: Mutation
 }
