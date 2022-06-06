@@ -1,6 +1,7 @@
 type Query{
 	health: String
-	brelf: String
+	grelf: String
+	gwelf: String
 }
 
 type Mutation{
