@@ -1,0 +1,9 @@
+mutation {
+  submitFeedback(submitFeedback: {
+    name:"bogdan", email:"janusz@qwe.pl", message:"some message janusza"
+  }
+  ), {
+    message
+  }
+  
+}

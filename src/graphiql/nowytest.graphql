@@ -1,0 +1,9 @@
+mutation {
+  submitForm(submitForm: {
+    name:"bogdan", email:"janusz@qwe.pl", message:"some message janusza"
+  }
+  ), {
+    message
+  }
+  
+}
