@@ -1,0 +1,48 @@
+enum animals{
+	turtle
+	cat
+}
+
+enum colors{
+	white
+	black
+	red
+	blue
+	green
+}
+
+type Mutation{
+	submitForm(
+		submitForm: submitForm
+	): Response
+	submitFeedback(
+		submitFeedback: submitFeedback
+	): Response
+}
+
+type Query{
+	health: String
+}
+
+type Response{
+	message: String!
+}
+
+input submitFeedback{
+	name: String
+	email: String
+	message: String
+}
+
+input submitForm{
+	name: String!
+	email: String!
+	isFemale: Boolean
+	favouriteColors: [colors!] = []
+	leastLikedColor: colors!
+	message: String
+}
+schema{
+	query: Query,
+	mutation: Mutation
+}
