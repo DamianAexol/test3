@@ -1,9 +1,32 @@
-mutation {
-  submitFeedback(submitFeedback: {
-    name:"Wiktor", email:"wiktor@qwe.pl", message:"some message WIKTORA"
-  }
-  ), {
-    message
-  }
-  
+type Query{
+	post: Post!
+	helfv2: String!
+}
+
+type Mutation{
+	createPost(
+		createPost: createPost
+	): Post
+}
+
+type Post implements IPost{
+	id: ID
+	userId: String
+	title: String
+	body: String
+}
+
+input createPost{
+	userId: Int
+	body: String
+	title: String
+}
+
+interface IPost{
+	title: String
+	body: String
+}
+schema{
+	query: Query,
+	mutation: Mutation
 }
