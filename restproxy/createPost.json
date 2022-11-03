@@ -1,0 +1,21 @@
+{
+  "urlTemplate": "https://jsonplaceholder.typicode.com/posts",
+  "method": "POST",
+  "query": {
+    "type": "Mutation",
+    "field": "createPost"
+  },
+  "headers": [
+    [
+      "Content-Type",
+      "application/json"
+    ]
+  ],
+  "mapper": "{\n    \"name\": \"$name\"\n}",
+  "bodyMapper": "{\n  \"userId\": \"$user_id\",\n  \"body\": \"$message\",\n  \"testvalue\" : \"blabla\",\n  \"title\": \"$title\"\n}",
+  "inputs": {
+    "user_id": "52",
+    "message": "message test",
+    "title": "eqwe123"
+  }
+}

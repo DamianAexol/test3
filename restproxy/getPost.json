@@ -1,0 +1,13 @@
+{
+  "urlTemplate": "https://jsonplaceholder.typicode.com/posts/$post_id",
+  "method": "GET",
+  "query": {
+    "type": "Query",
+    "field": "post"
+  },
+  "inputs": {
+    "post_id": "15"
+  },
+  "mapper": "{\n\"postId\": \"$post_id\"\n}",
+  "bodyMapper": ""
+}
