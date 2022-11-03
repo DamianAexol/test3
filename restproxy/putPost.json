@@ -1,0 +1,17 @@
+{
+  "urlTemplate": "https://jsonplaceholder.typicode.com/posts/$postId",
+  "method": "PUT",
+  "query": {
+    "type": "Mutation",
+    "field": "putPost"
+  },
+  "headers": [
+    [
+      "Content-Type",
+      "application/json"
+    ]
+  ],
+  "mapper": "{\n    \"name\": \"$name\"\n}",
+  "bodyMapper": "{ }",
+  "filename": "putPost.json"
+}

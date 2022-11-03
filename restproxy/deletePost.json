@@ -1,0 +1,14 @@
+{
+  "urlTemplate": "https://jsonplaceholder.typicode.com/posts/$post_id",
+  "method": "DELETE",
+  "query": {
+    "type": "Query",
+    "field": "post"
+  },
+  "headers": [],
+  "mapper": "{\n    \"name\": \"$name\"\n}",
+  "bodyMapper": "",
+  "inputs": {
+    "post_id": "42"
+  }
+}
