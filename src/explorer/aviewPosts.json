@@ -1,0 +1,174 @@
+{
+  "forms": {
+    "Query": {
+      "node": {
+        "name": "Query",
+        "type": {
+          "fieldType": {
+            "name": "type",
+            "type": "name"
+          },
+          "operations": [
+            "query"
+          ]
+        },
+        "data": {
+          "type": "ObjectTypeDefinition"
+        },
+        "interfaces": [],
+        "directives": [],
+        "args": [
+          {
+            "name": "post",
+            "args": [
+              {
+                "name": "postId",
+                "directives": [],
+                "type": {
+                  "fieldType": {
+                    "name": "ID",
+                    "type": "name"
+                  }
+                },
+                "data": {
+                  "type": "InputValueDefinition"
+                },
+                "interfaces": [],
+                "args": []
+              }
+            ],
+            "type": {
+              "fieldType": {
+                "name": "Post",
+                "type": "name"
+              }
+            },
+            "directives": [],
+            "interfaces": [],
+            "data": {
+              "type": "FieldDefinition"
+            }
+          },
+          {
+            "name": "posts",
+            "args": [],
+            "type": {
+              "fieldType": {
+                "type": "array",
+                "nest": {
+                  "name": "Post",
+                  "type": "name"
+                }
+              }
+            },
+            "directives": [],
+            "interfaces": [],
+            "data": {
+              "type": "FieldDefinition"
+            }
+          }
+        ]
+      }
+    },
+    "Query.posts": {
+      "node": {
+        "name": "posts",
+        "args": [],
+        "type": {
+          "fieldType": {
+            "type": "required",
+            "nest": {
+              "type": "array",
+              "nest": {
+                "type": "required",
+                "nest": {
+                  "name": "Post",
+                  "type": "name"
+                }
+              }
+            }
+          }
+        },
+        "directives": [],
+        "interfaces": [],
+        "data": {
+          "type": "FieldDefinition"
+        }
+      }
+    },
+    "Query.posts.message": {
+      "node": {
+        "name": "message",
+        "args": [],
+        "type": {
+          "fieldType": {
+            "name": "String",
+            "type": "name"
+          }
+        },
+        "directives": [],
+        "interfaces": [],
+        "data": {
+          "type": "FieldDefinition"
+        }
+      }
+    },
+    "Query.posts.id": {
+      "node": {
+        "name": "id",
+        "args": [],
+        "type": {
+          "fieldType": {
+            "type": "required",
+            "nest": {
+              "name": "ID",
+              "type": "name"
+            }
+          }
+        },
+        "directives": [],
+        "interfaces": [],
+        "data": {
+          "type": "FieldDefinition"
+        }
+      }
+    },
+    "Query.posts.title": {
+      "node": {
+        "name": "title",
+        "args": [],
+        "type": {
+          "fieldType": {
+            "name": "String",
+            "type": "name"
+          }
+        },
+        "directives": [],
+        "interfaces": [],
+        "data": {
+          "type": "FieldDefinition"
+        }
+      }
+    },
+    "Query.posts.user_id": {
+      "node": {
+        "name": "user_id",
+        "args": [],
+        "type": {
+          "fieldType": {
+            "type": "required",
+            "nest": {
+              "name": "String",
+              "type": "name"
+            }
+          }
+        },
+        "directives": [],
+        "interfaces": [],
+        "data": {
+          "type": "FieldDefinition"
+        }
+      }
+    }
+  }
+}
