@@ -1,0 +1,3 @@
+query {
+  getComment(post_id: "5")
+}

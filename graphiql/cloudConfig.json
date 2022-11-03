@@ -1,0 +1,10 @@
+{
+  "currentEndpoint": "faker",
+  "endpoints": [
+    {
+      "name": "localhost",
+      "url": "https://localhost:8080/graphql",
+      "headers": []
+    }
+  ]
+}
