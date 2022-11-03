@@ -1,0 +1,316 @@
+{
+  "forms": {
+    "Mutation": {
+      "node": {
+        "name": "Mutation",
+        "type": {
+          "fieldType": {
+            "name": "type",
+            "type": "name"
+          },
+          "operations": [
+            "mutation"
+          ]
+        },
+        "data": {
+          "type": "ObjectTypeDefinition"
+        },
+        "interfaces": [],
+        "directives": [],
+        "args": [
+          {
+            "name": "createPost",
+            "args": [
+              {
+                "name": "createPost",
+                "directives": [],
+                "type": {
+                  "fieldType": {
+                    "name": "createPost",
+                    "type": "name"
+                  }
+                },
+                "data": {
+                  "type": "InputValueDefinition"
+                },
+                "interfaces": [],
+                "args": []
+              }
+            ],
+            "type": {
+              "fieldType": {
+                "name": "Post",
+                "type": "name"
+              }
+            },
+            "directives": [],
+            "interfaces": [],
+            "data": {
+              "type": "FieldDefinition"
+            }
+          }
+        ]
+      }
+    },
+    "Mutation.createPost": {
+      "node": {
+        "name": "createPost",
+        "args": [
+          {
+            "name": "createPost",
+            "directives": [],
+            "type": {
+              "fieldType": {
+                "name": "CreatePost",
+                "type": "name"
+              }
+            },
+            "data": {
+              "type": "InputValueDefinition"
+            },
+            "interfaces": [],
+            "args": []
+          }
+        ],
+        "type": {
+          "fieldType": {
+            "name": "Post",
+            "type": "name"
+          }
+        },
+        "directives": [],
+        "interfaces": [],
+        "data": {
+          "type": "FieldDefinition"
+        }
+      },
+      "value": {
+        "createPost": {
+          "node": {
+            "name": "createPost",
+            "directives": [],
+            "type": {
+              "fieldType": {
+                "name": "CreatePost",
+                "type": "name"
+              }
+            },
+            "data": {
+              "type": "InputValueDefinition"
+            },
+            "interfaces": [],
+            "args": []
+          },
+          "value": {
+            "message": {
+              "node": {
+                "name": "message",
+                "directives": [],
+                "type": {
+                  "fieldType": {
+                    "type": "required",
+                    "nest": {
+                      "name": "String",
+                      "type": "name"
+                    }
+                  }
+                },
+                "data": {
+                  "type": "InputValueDefinition"
+                },
+                "interfaces": [],
+                "args": []
+              },
+              "value": "wiadomosc"
+            },
+            "title": {
+              "node": {
+                "name": "title",
+                "directives": [],
+                "type": {
+                  "fieldType": {
+                    "type": "required",
+                    "nest": {
+                      "name": "String",
+                      "type": "name"
+                    }
+                  }
+                },
+                "data": {
+                  "type": "InputValueDefinition"
+                },
+                "interfaces": [],
+                "args": []
+              },
+              "value": "tytul"
+            },
+            "user_id": {
+              "node": {
+                "name": "user_id",
+                "directives": [],
+                "type": {
+                  "fieldType": {
+                    "type": "required",
+                    "nest": {
+                      "name": "Int",
+                      "type": "name"
+                    }
+                  }
+                },
+                "data": {
+                  "type": "InputValueDefinition"
+                },
+                "interfaces": [],
+                "args": []
+              },
+              "value": "123"
+            }
+          }
+        }
+      }
+    },
+    "Mutation.createPost.message": {
+      "node": {
+        "name": "message",
+        "args": [],
+        "type": {
+          "fieldType": {
+            "name": "String",
+            "type": "name"
+          }
+        },
+        "directives": [],
+        "interfaces": [],
+        "data": {
+          "type": "FieldDefinition"
+        }
+      }
+    },
+    "Mutation.createPost.title": {
+      "node": {
+        "name": "title",
+        "args": [],
+        "type": {
+          "fieldType": {
+            "name": "String",
+            "type": "name"
+          }
+        },
+        "directives": [],
+        "interfaces": [],
+        "data": {
+          "type": "FieldDefinition"
+        }
+      }
+    },
+    "Mutation.createPost.user_id": {
+      "node": {
+        "name": "user_id",
+        "args": [],
+        "type": {
+          "fieldType": {
+            "type": "required",
+            "nest": {
+              "name": "String",
+              "type": "name"
+            }
+          }
+        },
+        "directives": [],
+        "interfaces": [],
+        "data": {
+          "type": "FieldDefinition"
+        }
+      }
+    },
+    "Mutation.createPost.string": {
+      "node": {
+        "name": "string",
+        "args": [
+          {
+            "name": "dsa",
+            "directives": [],
+            "type": {
+              "fieldType": {
+                "name": "Boolean",
+                "type": "name"
+              }
+            },
+            "data": {
+              "type": "InputValueDefinition"
+            },
+            "args": [],
+            "interfaces": [],
+            "id": "94e3349db930d"
+          },
+          {
+            "name": "qew",
+            "directives": [],
+            "type": {
+              "fieldType": {
+                "name": "String",
+                "type": "name"
+              }
+            },
+            "data": {
+              "type": "InputValueDefinition"
+            },
+            "args": [],
+            "interfaces": [],
+            "id": "18aa378b90ba98"
+          }
+        ],
+        "type": {
+          "fieldType": {
+            "name": "String",
+            "type": "name"
+          }
+        },
+        "directives": [],
+        "interfaces": [],
+        "data": {
+          "type": "FieldDefinition"
+        },
+        "id": "bedcfa2970c84"
+      },
+      "value": {
+        "dsa": {
+          "node": {
+            "name": "dsa",
+            "directives": [],
+            "type": {
+              "fieldType": {
+                "name": "Boolean",
+                "type": "name"
+              }
+            },
+            "data": {
+              "type": "InputValueDefinition"
+            },
+            "args": [],
+            "interfaces": [],
+            "id": "94e3349db930d"
+          }
+        },
+        "qew": {
+          "node": {
+            "name": "qew",
+            "directives": [],
+            "type": {
+              "fieldType": {
+                "name": "String",
+                "type": "name"
+              }
+            },
+            "data": {
+              "type": "InputValueDefinition"
+            },
+            "args": [],
+            "interfaces": [],
+            "id": "18aa378b90ba98"
+          }
+        }
+      }
+    }
+  }
+}
