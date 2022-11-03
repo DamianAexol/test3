@@ -1,0 +1,239 @@
+{
+  "forms": {
+    "Mutation": {
+      "node": {
+        "name": "Mutation",
+        "type": {
+          "fieldType": {
+            "name": "type",
+            "type": "name"
+          },
+          "operations": [
+            "mutation"
+          ]
+        },
+        "data": {
+          "type": "ObjectTypeDefinition"
+        },
+        "interfaces": [],
+        "directives": [],
+        "args": [
+          {
+            "name": "createPerson",
+            "args": [
+              {
+                "name": "createPerson",
+                "directives": [],
+                "type": {
+                  "fieldType": {
+                    "name": "CreatePerson",
+                    "type": "name"
+                  }
+                },
+                "data": {
+                  "type": "InputValueDefinition"
+                },
+                "interfaces": [],
+                "args": []
+              }
+            ],
+            "type": {
+              "fieldType": {
+                "name": "String",
+                "type": "name"
+              }
+            },
+            "directives": [],
+            "interfaces": [],
+            "data": {
+              "type": "FieldDefinition"
+            }
+          },
+          {
+            "name": "createPost",
+            "args": [
+              {
+                "name": "createPost",
+                "directives": [],
+                "type": {
+                  "fieldType": {
+                    "name": "CreatePost",
+                    "type": "name"
+                  }
+                },
+                "data": {
+                  "type": "InputValueDefinition"
+                },
+                "interfaces": [],
+                "args": []
+              }
+            ],
+            "type": {
+              "fieldType": {
+                "name": "Post",
+                "type": "name"
+              }
+            },
+            "directives": [],
+            "interfaces": [],
+            "data": {
+              "type": "FieldDefinition"
+            }
+          },
+          {
+            "name": "deletePost",
+            "args": [
+              {
+                "name": "postId",
+                "directives": [],
+                "type": {
+                  "fieldType": {
+                    "name": "ID",
+                    "type": "name"
+                  }
+                },
+                "data": {
+                  "type": "InputValueDefinition"
+                },
+                "interfaces": [],
+                "args": []
+              }
+            ],
+            "type": {
+              "fieldType": {
+                "name": "String",
+                "type": "name"
+              }
+            },
+            "directives": [],
+            "interfaces": [],
+            "data": {
+              "type": "FieldDefinition"
+            }
+          },
+          {
+            "name": "paymentWebhook",
+            "args": [
+              {
+                "name": "data",
+                "directives": [],
+                "type": {
+                  "fieldType": {
+                    "name": "Data",
+                    "type": "name"
+                  }
+                },
+                "data": {
+                  "type": "InputValueDefinition"
+                },
+                "interfaces": [],
+                "args": []
+              }
+            ],
+            "type": {
+              "fieldType": {
+                "name": "Result",
+                "type": "name"
+              }
+            },
+            "directives": [],
+            "interfaces": [],
+            "data": {
+              "type": "FieldDefinition"
+            }
+          }
+        ]
+      }
+    },
+    "Mutation.createPerson": {
+      "node": {
+        "name": "createPerson",
+        "args": [
+          {
+            "name": "createPerson",
+            "directives": [],
+            "type": {
+              "fieldType": {
+                "name": "CreatePerson",
+                "type": "name"
+              }
+            },
+            "data": {
+              "type": "InputValueDefinition"
+            },
+            "interfaces": [],
+            "args": []
+          }
+        ],
+        "type": {
+          "fieldType": {
+            "name": "String",
+            "type": "name"
+          }
+        },
+        "directives": [],
+        "interfaces": [],
+        "data": {
+          "type": "FieldDefinition"
+        }
+      },
+      "value": {
+        "createPerson": {
+          "node": {
+            "name": "createPerson",
+            "directives": [],
+            "type": {
+              "fieldType": {
+                "name": "CreatePerson",
+                "type": "name"
+              }
+            },
+            "data": {
+              "type": "InputValueDefinition"
+            },
+            "interfaces": [],
+            "args": []
+          },
+          "value": {
+            "job": {
+              "node": {
+                "name": "job",
+                "directives": [],
+                "type": {
+                  "fieldType": {
+                    "name": "String",
+                    "type": "name"
+                  }
+                },
+                "data": {
+                  "type": "InputValueDefinition"
+                },
+                "interfaces": [],
+                "args": []
+              },
+              "value": "Dentist"
+            },
+            "name": {
+              "node": {
+                "name": "name",
+                "directives": [],
+                "type": {
+                  "fieldType": {
+                    "name": "String",
+                    "type": "name"
+                  }
+                },
+                "data": {
+                  "type": "InputValueDefinition"
+                },
+                "interfaces": [],
+                "args": []
+              },
+              "value": "Bogdan"
+            }
+          }
+        }
+      }
+    }
+  }
+}
