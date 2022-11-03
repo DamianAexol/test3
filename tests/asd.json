@@ -1,0 +1,209 @@
+{
+  "endpoint": "faker",
+  "forms": {
+    "Query": {
+      "node": {
+        "name": "Query",
+        "type": {
+          "fieldType": {
+            "name": "type",
+            "type": "name"
+          },
+          "operations": [
+            "query"
+          ]
+        },
+        "data": {
+          "type": "ObjectTypeDefinition"
+        },
+        "interfaces": [],
+        "directives": [],
+        "args": [
+          {
+            "name": "getComment",
+            "args": [
+              {
+                "name": "post_id",
+                "directives": [],
+                "type": {
+                  "fieldType": {
+                    "name": "String",
+                    "type": "name"
+                  }
+                },
+                "data": {
+                  "type": "InputValueDefinition"
+                },
+                "args": [],
+                "interfaces": [],
+                "id": "dfed863beb010"
+              }
+            ],
+            "type": {
+              "fieldType": {
+                "name": "String",
+                "type": "name"
+              }
+            },
+            "directives": [],
+            "interfaces": [],
+            "data": {
+              "type": "FieldDefinition"
+            },
+            "id": "a3569c7676652"
+          },
+          {
+            "name": "post",
+            "args": [
+              {
+                "name": "post_id",
+                "directives": [],
+                "type": {
+                  "fieldType": {
+                    "name": "ID",
+                    "type": "name"
+                  }
+                },
+                "data": {
+                  "type": "InputValueDefinition"
+                },
+                "args": [],
+                "interfaces": [],
+                "id": "dfed863beb010"
+              }
+            ],
+            "type": {
+              "fieldType": {
+                "name": "Post",
+                "type": "name"
+              }
+            },
+            "directives": [],
+            "interfaces": [],
+            "data": {
+              "type": "FieldDefinition"
+            },
+            "id": "9e20a15e16e"
+          },
+          {
+            "name": "posts",
+            "args": [],
+            "type": {
+              "fieldType": {
+                "type": "required",
+                "nest": {
+                  "type": "array",
+                  "nest": {
+                    "type": "required",
+                    "nest": {
+                      "name": "Post",
+                      "type": "name"
+                    }
+                  }
+                }
+              }
+            },
+            "directives": [],
+            "interfaces": [],
+            "data": {
+              "type": "FieldDefinition"
+            },
+            "id": "187b8240301972"
+          },
+          {
+            "name": "qwe",
+            "args": [
+              {
+                "name": "qweqwe666",
+                "directives": [],
+                "type": {
+                  "fieldType": {
+                    "name": "String",
+                    "type": "name"
+                  }
+                },
+                "data": {
+                  "type": "InputValueDefinition"
+                },
+                "args": [],
+                "interfaces": [],
+                "id": "1223be2db1a3fe"
+              }
+            ],
+            "type": {
+              "fieldType": {
+                "name": "String",
+                "type": "name"
+              }
+            },
+            "directives": [],
+            "interfaces": [],
+            "data": {
+              "type": "FieldDefinition"
+            },
+            "id": "139b68e9f6384d"
+          }
+        ],
+        "id": "1d24ddb70e8169"
+      }
+    },
+    "Query.qwe": {
+      "node": {
+        "name": "qwe",
+        "args": [
+          {
+            "name": "qweqwe666",
+            "directives": [],
+            "type": {
+              "fieldType": {
+                "name": "String",
+                "type": "name"
+              }
+            },
+            "data": {
+              "type": "InputValueDefinition"
+            },
+            "args": [],
+            "interfaces": [],
+            "id": "1223be2db1a3fe"
+          }
+        ],
+        "type": {
+          "fieldType": {
+            "name": "String",
+            "type": "name"
+          }
+        },
+        "directives": [],
+        "interfaces": [],
+        "data": {
+          "type": "FieldDefinition"
+        },
+        "id": "139b68e9f6384d"
+      },
+      "value": {
+        "qweqwe666": {
+          "node": {
+            "name": "qweqwe666",
+            "directives": [],
+            "type": {
+              "fieldType": {
+                "name": "String",
+                "type": "name"
+              }
+            },
+            "data": {
+              "type": "InputValueDefinition"
+            },
+            "args": [],
+            "interfaces": [],
+            "id": "1223be2db1a3fe"
+          }
+        }
+      }
+    }
+  },
+  "response": {
+    "qwe": null
+  }
+}
