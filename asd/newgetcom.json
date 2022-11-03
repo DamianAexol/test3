@@ -1,0 +1,210 @@
+{
+  "forms": {
+    "Query": {
+      "node": {
+        "name": "Query",
+        "type": {
+          "fieldType": {
+            "name": "type",
+            "type": "name"
+          },
+          "operations": [
+            "query"
+          ]
+        },
+        "data": {
+          "type": "ObjectTypeDefinition"
+        },
+        "interfaces": [],
+        "directives": [],
+        "args": [
+          {
+            "name": "getComment",
+            "args": [
+              {
+                "name": "post_id",
+                "directives": [],
+                "type": {
+                  "fieldType": {
+                    "type": "required",
+                    "nest": {
+                      "name": "Int",
+                      "type": "name"
+                    }
+                  }
+                },
+                "data": {
+                  "type": "InputValueDefinition"
+                },
+                "args": [],
+                "interfaces": [],
+                "id": "dfed863beb010"
+              }
+            ],
+            "type": {
+              "fieldType": {
+                "type": "required",
+                "nest": {
+                  "name": "String",
+                  "type": "name"
+                }
+              }
+            },
+            "directives": [],
+            "interfaces": [],
+            "data": {
+              "type": "FieldDefinition"
+            },
+            "id": "a3569c7676652"
+          },
+          {
+            "name": "healthv92",
+            "args": [],
+            "type": {
+              "fieldType": {
+                "name": "Boolean",
+                "type": "name"
+              }
+            },
+            "directives": [],
+            "interfaces": [],
+            "data": {
+              "type": "FieldDefinition"
+            },
+            "id": "13bcae87a65402"
+          },
+          {
+            "name": "post",
+            "args": [
+              {
+                "name": "post_id",
+                "directives": [],
+                "type": {
+                  "fieldType": {
+                    "type": "required",
+                    "nest": {
+                      "name": "Int",
+                      "type": "name"
+                    }
+                  }
+                },
+                "data": {
+                  "type": "InputValueDefinition"
+                },
+                "args": [],
+                "interfaces": [],
+                "id": "dfed863beb010"
+              }
+            ],
+            "type": {
+              "fieldType": {
+                "type": "required",
+                "nest": {
+                  "name": "Post",
+                  "type": "name"
+                }
+              }
+            },
+            "directives": [],
+            "interfaces": [],
+            "data": {
+              "type": "FieldDefinition"
+            },
+            "id": "9e20a15e16e"
+          },
+          {
+            "name": "posts",
+            "args": [],
+            "type": {
+              "fieldType": {
+                "type": "required",
+                "nest": {
+                  "type": "array",
+                  "nest": {
+                    "type": "required",
+                    "nest": {
+                      "name": "Post",
+                      "type": "name"
+                    }
+                  }
+                }
+              }
+            },
+            "directives": [],
+            "interfaces": [],
+            "data": {
+              "type": "FieldDefinition"
+            },
+            "id": "187b8240301972"
+          }
+        ],
+        "id": "e8dc69a431258"
+      }
+    },
+    "Query.getComment": {
+      "node": {
+        "name": "getComment",
+        "args": [
+          {
+            "name": "post_id",
+            "directives": [],
+            "type": {
+              "fieldType": {
+                "type": "required",
+                "nest": {
+                  "name": "Int",
+                  "type": "name"
+                }
+              }
+            },
+            "data": {
+              "type": "InputValueDefinition"
+            },
+            "args": [],
+            "interfaces": [],
+            "id": "dfed863beb010"
+          }
+        ],
+        "type": {
+          "fieldType": {
+            "type": "required",
+            "nest": {
+              "name": "String",
+              "type": "name"
+            }
+          }
+        },
+        "directives": [],
+        "interfaces": [],
+        "data": {
+          "type": "FieldDefinition"
+        },
+        "id": "a3569c7676652"
+      },
+      "value": {
+        "post_id": {
+          "node": {
+            "name": "post_id",
+            "directives": [],
+            "type": {
+              "fieldType": {
+                "type": "required",
+                "nest": {
+                  "name": "Int",
+                  "type": "name"
+                }
+              }
+            },
+            "data": {
+              "type": "InputValueDefinition"
+            },
+            "args": [],
+            "interfaces": [],
+            "id": "dfed863beb010"
+          },
+          "value": "123"
+        }
+      }
+    }
+  }
+}
